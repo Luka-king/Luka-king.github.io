@@ -1,0 +1,9 @@
+# Cozypop Trails app-ads.txt
+# Deploy this file at the ad domain root before release:
+# https://app-d.arrowpop.com.ai/app-ads.txt
+#
+# Confirm the complete seller list in AppLovin MAX / AdMob before publishing.
+# The Google publisher ID below is derived from GADApplicationIdentifier:
+# ca-app-pub-3356097644239630~3476405643
+
+google.com, pub-3356097644239630, DIRECT, f08c47fec0942fa0
