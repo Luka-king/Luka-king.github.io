@@ -18,73 +18,96 @@ th { background: #f5f5f5; }
 <body>
 
 <h1>CrossLingo Privacy Policy</h1>
-<p class="meta">Last Updated: July 2, 2026 &middot; Version 1.3</p>
+<p class="meta">Last Updated: August 4, 2026 &middot; Version 1.3</p>
 
-<p>CrossLingo ("the App", "we", "us", or "our") is a translation app for iPhone. This Privacy Policy explains how the App handles information when you use text, voice, camera, image translation, and CrossLingo Plus subscription features.</p>
+<p>CrossLingo ("the App", "we", "us", or "our") is a translation app for iPhone. This Privacy Policy explains how the App handles information when you use text, voice, camera, image translation, feedback, attribution, analytics, and CrossLingo Plus subscription features.</p>
 
 <h2>1. Summary</h2>
-<p>CrossLingo does not require you to create an account. We do not operate a server that receives your typed text, microphone audio, speech transcripts, translations, photos, or conversation history for translation processing.</p>
-<p>CrossLingo Plus subscriptions are provided through Apple's In-App Purchase system. Our servers are used to load subscription catalog information, create purchase orders, verify Apple purchase results, and confirm membership status.</p>
-<p>Marketing and attribution reporting are disabled in the App Review build. If enabled in a later marketing build, the App will update this policy and any required privacy disclosures before submission.</p>
+<p>CrossLingo does not require you to create an account. The App uses Apple system frameworks for speech recognition, translation, camera capture, photo selection, and text recognition. We do not operate a server that receives your typed text, microphone audio, speech transcripts, translations, photos, or conversation history for translation processing.</p>
+<p>CrossLingo Plus subscriptions are provided through Apple's In-App Purchase system. Our servers are used to load subscription catalog information, create purchase orders, verify Apple purchase results, confirm membership status, restore purchases, and diagnose purchase issues.</p>
+<p>The App includes an optional feedback feature. If you submit feedback, we collect the feedback text, optional contact information, and optional images that you choose to attach so that we can investigate and reply to your request.</p>
+<p>The App uses AppsFlyer, Meta/Facebook SDK, and our own market reporting endpoint for install attribution, marketing measurement, app analytics, and subscription funnel diagnostics. These services must not receive your translation content.</p>
 
 <h2>2. Translation Content We Do Not Collect</h2>
-<p>We do not collect, sell, or share the following information through our own services:</p>
+<p>We do not collect, sell, or share the following information through our own translation services:</p>
 <ul>
 <li>Voice recordings or live microphone audio</li>
 <li>Speech transcripts, translations, or conversation history</li>
-<li>Photos or images captured through the camera</li>
-<li>Text you type into the App</li>
+<li>Photos or images captured through the camera for translation</li>
+<li>Text you type into the App for translation</li>
 </ul>
+<p>If you voluntarily attach a screenshot or image to a feedback request, that image is collected as part of customer support rather than translation processing.</p>
 
 <h2>3. Information Used for Subscriptions and App Functionality</h2>
 <p>To provide CrossLingo Plus, prevent duplicate or invalid purchases, restore purchases, and help diagnose subscription issues, the App may send the following information to our servers:</p>
 <table>
 <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
-<tr><td>App and device identifiers</td><td>App-generated CUID or app instance ID, identifier for vendor (IDFV), device model, operating system version, App version</td><td>Identify the app installation, sign requests, confirm membership status, and support purchase troubleshooting.</td></tr>
-<tr><td>Subscription and purchase information</td><td>Selected product, subscription package or SKU, order identifiers, Apple transaction identifiers, subscription status, expiration time</td><td>Create and verify orders, unlock CrossLingo Plus, restore purchases, and prevent abuse.</td></tr>
-<tr><td>Technical request information</td><td>Language, region, time zone, network request timestamp, server response status</td><td>Operate the service, secure requests, diagnose failures, and improve reliability.</td></tr>
+<tr><td>App and device identifiers</td><td>App-generated CUID or app instance ID, identifier for vendor (IDFV), device model, operating system version, App version, language, region, time zone</td><td>Identify the app installation, sign requests, confirm membership status, prevent abuse, and support troubleshooting.</td></tr>
+<tr><td>Subscription and purchase information</td><td>Selected product, subscription package or SKU, order identifiers, Apple transaction identifiers, original transaction identifiers, subscription status, expiration time</td><td>Create and verify orders, unlock CrossLingo Plus, restore purchases, handle renewals, and prevent duplicate or invalid purchases.</td></tr>
+<tr><td>Technical request information</td><td>Request timestamp, server response status, error code, app environment, paywall variant</td><td>Operate the service, secure requests, diagnose failures, and improve reliability.</td></tr>
 </table>
-<p>This information is used for app functionality, subscription fulfillment, fraud prevention, security, and customer support. We do not sell this information.</p>
+<p>This information is used for app functionality, subscription fulfillment, fraud prevention, security, analytics, and customer support. We do not sell this information.</p>
 
-<h2>4. Apple System Services</h2>
+<h2>4. Feedback and Customer Support</h2>
+<p>When you use the in-app Feedback feature, the App may send the following information to our feedback backend:</p>
+<table>
+<tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+<tr><td>Feedback content</td><td>Details you type, selected issue metadata, optional screenshots or images</td><td>Understand, reproduce, and respond to your feedback.</td></tr>
+<tr><td>Contact information</td><td>Email address or other contact value if you choose to provide it</td><td>Contact you about your feedback if needed.</td></tr>
+<tr><td>Feedback status</td><td>Submitted, replied, viewed, reply time, reply content, reply attachments</td><td>Show feedback history, unread reply indicators, and support replies in the App.</td></tr>
+<tr><td>Common app parameters</td><td>CUID, app version, device model, iOS version, language, region</td><td>Route feedback, prevent abuse, and diagnose app-specific issues.</td></tr>
+</table>
+<p>Please do not include sensitive personal information, private conversations, payment card details, passwords, or confidential content in feedback text or images.</p>
+
+<h2>5. Apple System Services</h2>
 <p>The App uses Apple-provided frameworks to perform its core functions. Depending on your device, iOS version, language, and system settings, Apple speech recognition and translation services may process requests on device or through Apple-operated services. We do not receive or store the content processed by Apple frameworks.</p>
 <table>
 <tr><th>Feature</th><th>Apple Framework or Service</th><th>Purpose</th></tr>
 <tr><td>Voice translation</td><td>AVFoundation and Speech</td><td>Capture speech from the microphone and convert speech to text.</td></tr>
 <tr><td>Text and voice translation</td><td>Translation</td><td>Translate text between selected languages.</td></tr>
 <tr><td>Camera translation</td><td>AVFoundation, PhotosUI, and Vision</td><td>Capture or select an image, recognize text, and translate it.</td></tr>
+<tr><td>Subscriptions</td><td>StoreKit</td><td>Present Apple purchase sheets, process subscriptions, restore purchases, and provide transaction identifiers for server verification.</td></tr>
 </table>
 <p>Apple's handling of data is governed by Apple's privacy policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a>.</p>
 
-<h2>5. Permissions the App Requests</h2>
+<h2>6. Permissions the App Requests</h2>
 <table>
 <tr><th>Permission</th><th>Why It Is Needed</th></tr>
 <tr><td>Microphone</td><td>Required to capture speech for voice translation.</td></tr>
 <tr><td>Speech Recognition</td><td>Required to convert spoken words into text using Apple's Speech framework.</td></tr>
 <tr><td>Camera</td><td>Required to capture photos of text for camera translation.</td></tr>
-<tr><td>Photo Library Selection</td><td>Used only when you choose an image from the system photo picker.</td></tr>
+<tr><td>Photo Library Selection</td><td>Used only when you choose an image from the system photo picker for camera translation or feedback attachment.</td></tr>
+<tr><td>App Tracking Transparency</td><td>Requested where required to use advertising identifiers for attribution and marketing measurement. If you deny permission, the App must not use IDFA for tracking.</td></tr>
 </table>
 
-<h2>6. Local Storage</h2>
-<p>The App may store basic settings and local app state on your device using iOS app storage. This includes onboarding state, selected languages, subscription catalog cache, daily free translation count, and local conversation history if created by the App. Deleting the App removes its local app container subject to iOS behavior.</p>
+<h2>7. Attribution, Analytics, and Market Reporting</h2>
+<p>The App may use AppsFlyer, Meta/Facebook SDK, and our backend market reporting endpoint to understand install source, advertising performance, onboarding completion, paywall display, subscription checkout, app open events, and similar app interaction events.</p>
+<table>
+<tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
+<tr><td>Identifiers</td><td>CUID, app instance ID, AppsFlyer ID, Facebook anonymous ID, IDFV, IDFA if authorized</td><td>Attribute installs and app events, measure campaigns, de-duplicate reports, and diagnose funnel issues.</td></tr>
+<tr><td>App interaction events</td><td>App open, onboarding completion, paywall view, product selection, checkout start, restore result, purchase failure or cancellation</td><td>Analytics, product improvement, marketing measurement, and subscription funnel diagnostics.</td></tr>
+<tr><td>Purchase-related event metadata</td><td>Product ID, SKU, displayed price, currency, paywall variant, order ID or Apple transaction ID when applicable</td><td>Measure subscription checkout and verify reporting accuracy. Some purchase success conversion points may be reported by the backend instead of the client.</td></tr>
+</table>
+<p>These attribution and reporting tools must not receive typed text, voice recordings, speech transcripts, translations, photos used for translation, or conversation history. Some identifiers and app interaction events may be used for tracking as defined by Apple and are subject to your device settings and App Tracking Transparency choices.</p>
 
-<h2>7. Purchases and Subscriptions</h2>
+<h2>8. Local Storage</h2>
+<p>The App may store basic settings and local app state on your device using iOS app storage. This includes onboarding state, selected languages, subscription catalog cache, daily free translation count, local conversation history if created by the App, and local feedback read-state used to display unread reply indicators. Deleting the App removes its local app container subject to iOS behavior.</p>
+
+<h2>9. Purchases and Subscriptions</h2>
 <p>CrossLingo Plus is sold through Apple's In-App Purchase system. Apple processes payment information and manages billing, renewal, cancellation, and refunds. We do not receive your full payment card details.</p>
 <p>The App may contact our subscription backend before and after an Apple purchase to create an order, report the Apple transaction, confirm membership, restore active subscriptions, and unlock paid features on this device.</p>
+<p>Subscription products, introductory offers, free trials, prices, and renewal terms may vary by app version, region, backend configuration, and App Store settings. The exact terms are shown in the App and in Apple's purchase confirmation sheet before you subscribe.</p>
 
-<h2>8. Attribution and Analytics</h2>
-<p>The current App Review build disables marketing and attribution reporting. If a later build enables attribution or analytics, it may use services such as AppsFlyer, Meta/Facebook SDK, and our backend reporting endpoint, subject to App Store privacy requirements and any required system permission prompts.</p>
+<h2>10. Data Retention and Deletion</h2>
+<p>Local app data can be removed by deleting the App from your device. Subscription and purchase verification records may be retained as needed to provide the subscription, comply with legal obligations, resolve disputes, prevent fraud, and support customer service. Feedback records, optional contact information, and feedback images may be retained as needed to process and reply to support requests, prevent abuse, and maintain support history.</p>
 
-<h2>9. Data Retention and Deletion</h2>
-<p>Local app data can be removed by deleting the App from your device. Subscription and purchase verification records may be retained as needed to provide the subscription, comply with legal obligations, resolve disputes, prevent fraud, and support customer service.</p>
+<h2>11. Children's Privacy</h2>
+<p>The App is not directed to children. We do not knowingly collect personal information from children. Feedback should not include personal information from children.</p>
 
-<h2>10. Children's Privacy</h2>
-<p>The App is designed to function without an account or our own data collection backend. We do not knowingly collect personal information from children.</p>
-
-<h2>11. Changes to This Policy</h2>
+<h2>12. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. The "Last Updated" date will be revised when material changes are made.</p>
 
-<h2>12. Contact</h2>
+<h2>13. Contact</h2>
 <p>If you have questions about this Privacy Policy, please contact us through the CrossLingo Support page: <a href="https://luka-king.github.io/crosslingo/support/">https://luka-king.github.io/crosslingo/support/</a>.</p>
 
 </body>
