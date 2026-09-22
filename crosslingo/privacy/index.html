@@ -18,14 +18,14 @@ th { background: #f5f5f5; }
 <body>
 
 <h1>CrossTranslate Privacy Policy</h1>
-<p class="meta">Last Updated: September 18, 2026 &middot; Version 1.6</p>
+<p class="meta">Last Updated: September 22, 2026 &middot; Version 1.6</p>
 
 <p>CrossTranslate ("the App", "we", "us", or "our") is a translation app for iPhone. This Privacy Policy explains how the App handles information when you use text, voice, camera, image translation, feedback, attribution, analytics, and CrossTranslate Plus subscription features.</p>
 
 <h2>1. Summary</h2>
 <p>CrossTranslate does not require you to create an account. The App uses Apple system frameworks for speech recognition, translation, camera capture, photo selection, and text recognition. We do not operate a server that receives your typed text, microphone audio, speech transcripts, translations, photos, or conversation history for translation processing.</p>
 <p>CrossTranslate Plus subscriptions are provided through Apple's In-App Purchase system. Our servers are used to load subscription catalog information, create purchase orders, verify Apple purchase results, confirm membership status, restore purchases, and diagnose purchase issues.</p>
-<p>The App includes an optional feedback feature. If you submit feedback, we collect the feedback text, optional contact information, and optional images that you choose to attach so that we can investigate and reply to your request.</p>
+<p>The App includes an optional feedback and support feature. The current in-app Feedback flow lets you choose a support category, write a message, and send an email to our support address through Apple's Mail composer. If the legacy in-app feedback backend is enabled in a later version, it may also collect feedback text, optional contact information, and optional images that you choose to attach.</p>
 <p>The App uses AppsFlyer, Meta/Facebook SDK, Firebase Analytics, Firebase Crashlytics, and our own market reporting endpoint for install attribution, marketing measurement, app analytics, crash diagnostics, and subscription funnel diagnostics. These services must not receive your translation content.</p>
 
 <h2>2. Translation Content We Do Not Collect</h2>
@@ -36,7 +36,7 @@ th { background: #f5f5f5; }
 <li>Photos or images captured through the camera for translation</li>
 <li>Text you type into the App for translation</li>
 </ul>
-<p>If you voluntarily attach a screenshot or image to a feedback request, that image is collected as part of customer support rather than translation processing.</p>
+<p>If a version of the App allows you to voluntarily attach a screenshot or image to a feedback request, that image is collected as part of customer support rather than translation processing.</p>
 
 <h2>3. Information Used for Subscriptions and App Functionality</h2>
 <p>To provide CrossTranslate Plus, prevent duplicate or invalid purchases, restore purchases, and help diagnose subscription issues, the App may send the following information to our servers:</p>
@@ -49,15 +49,15 @@ th { background: #f5f5f5; }
 <p>This information is used for app functionality, subscription fulfillment, fraud prevention, security, analytics, and customer support. We do not sell this information.</p>
 
 <h2>4. Feedback and Customer Support</h2>
-<p>When you use the in-app Feedback feature, the App may send the following information to our feedback backend:</p>
+<p>When you use the current in-app Feedback feature, the App prepares a support email. That email is sent only if you choose to send it through the Apple Mail composer or your mail app. The email may include the following information:</p>
 <table>
 <tr><th>Category</th><th>Examples</th><th>Purpose</th></tr>
-<tr><td>Feedback content</td><td>Details you type, selected issue metadata, optional screenshots or images</td><td>Understand, reproduce, and respond to your feedback.</td></tr>
-<tr><td>Contact information</td><td>Email address or other contact value if you choose to provide it</td><td>Contact you about your feedback if needed.</td></tr>
-<tr><td>Feedback status</td><td>Submitted, replied, viewed, reply time, reply content, reply attachments</td><td>Show feedback history, unread reply indicators, and support replies in the App.</td></tr>
-<tr><td>Common app parameters</td><td>CUID, app version, device model, iOS version, language, region</td><td>Route feedback, prevent abuse, and diagnose app-specific issues.</td></tr>
+<tr><td>Support category and message</td><td>The category you choose, such as refund, technical issue, technical inquiry, price inquiry, advertising, or other, and the message you type.</td><td>Understand, reproduce, and respond to your request.</td></tr>
+<tr><td>Email contact information</td><td>The email address configured in Mail or the address you use to send the support email.</td><td>Reply to your support request.</td></tr>
+<tr><td>Diagnostic context</td><td>App version, app installation identifier, device model, iOS version, and non-content state included in the draft.</td><td>Diagnose app-specific issues and subscription or device context.</td></tr>
 </table>
-<p>Please do not include sensitive personal information, private conversations, payment card details, passwords, or confidential content in feedback text or images.</p>
+<p>If the legacy in-app feedback backend is enabled, the App may send feedback details, optional contact information, optional screenshots or images, feedback status, replies, reply attachments, and common app parameters to our feedback backend to provide support history, unread reply indicators, and developer replies in the App.</p>
+<p>Please do not include sensitive personal information, private conversations, payment card details, passwords, or confidential content in feedback text, email, or images.</p>
 
 <h2>5. Apple System Services</h2>
 <p>The App uses Apple-provided frameworks to perform its core functions. Depending on your device, iOS version, language, and system settings, Apple speech recognition and translation services may process requests on device or through Apple-operated services. We do not receive or store the content processed by Apple frameworks.</p>
@@ -76,7 +76,7 @@ th { background: #f5f5f5; }
 <tr><td>Microphone</td><td>Required to capture speech for voice translation.</td></tr>
 <tr><td>Speech Recognition</td><td>Required to convert spoken words into text using Apple's Speech framework.</td></tr>
 <tr><td>Camera</td><td>Required to capture photos of text for camera translation.</td></tr>
-<tr><td>Photo Library Selection</td><td>Used only when you choose an image from the system photo picker for camera translation or feedback attachment.</td></tr>
+<tr><td>Photo Library Selection</td><td>Used when you choose an image from the system photo picker for camera translation. It may also be used for feedback attachments if the legacy in-app feedback backend is enabled.</td></tr>
 <tr><td>App Tracking Transparency</td><td>Requested where required to use advertising identifiers for attribution and marketing measurement. If you deny permission, the App must not use IDFA for tracking.</td></tr>
 </table>
 
@@ -92,7 +92,7 @@ th { background: #f5f5f5; }
 <p>These attribution, analytics, crash, and reporting tools must not receive typed text, voice recordings, speech transcripts, translations, photos used for translation, or conversation history. Some identifiers and app interaction events may be used for tracking as defined by Apple and are subject to your device settings and App Tracking Transparency choices.</p>
 
 <h2>8. Local Storage</h2>
-<p>The App may store basic settings and local app state on your device using iOS app storage. This includes onboarding state, selected languages, subscription catalog cache, daily free translation count, local conversation history if created by the App, local feedback read-state used to display unread reply indicators, and SDK state used for analytics, attribution, crash diagnostics, or subscription reporting. Deleting the App removes its local app container subject to iOS behavior.</p>
+<p>The App may store basic settings and local app state on your device using iOS app storage. This includes onboarding state, selected languages, subscription catalog cache, daily free translation count, local conversation history if created by the App, local support draft state where applicable, local feedback read-state used for legacy unread reply indicators, and SDK state used for analytics, attribution, crash diagnostics, or subscription reporting. Deleting the App removes its local app container subject to iOS behavior.</p>
 
 <h2>9. Purchases and Subscriptions</h2>
 <p>CrossTranslate Plus is sold through Apple's In-App Purchase system. Apple processes payment information and manages billing, renewal, cancellation, and refunds. We do not receive your full payment card details.</p>
@@ -100,7 +100,7 @@ th { background: #f5f5f5; }
 <p>Subscription products, introductory offers, free trials, prices, retry offers, retention offers, and renewal terms may vary by app version, region, backend configuration, paywall context, and App Store settings. The exact terms are shown in the App and in Apple's purchase confirmation sheet before you subscribe.</p>
 
 <h2>10. Data Retention and Deletion</h2>
-<p>Local app data can be removed by deleting the App from your device. Subscription and purchase verification records may be retained as needed to provide the subscription, comply with legal obligations, resolve disputes, prevent fraud, and support customer service. Feedback records, optional contact information, and feedback images may be retained as needed to process and reply to support requests, prevent abuse, and maintain support history. Analytics, attribution, crash, and diagnostic records may be retained according to the retention settings of our analytics, attribution, crash reporting, and backend systems.</p>
+<p>Local app data can be removed by deleting the App from your device. Subscription and purchase verification records may be retained as needed to provide the subscription, comply with legal obligations, resolve disputes, prevent fraud, and support customer service. Support emails you send may be retained in our email systems as needed to process and reply to support requests. If the legacy in-app feedback backend is enabled, feedback records, optional contact information, and feedback images may be retained as needed to process and reply to support requests, prevent abuse, and maintain support history. Analytics, attribution, crash, and diagnostic records may be retained according to the retention settings of our analytics, attribution, crash reporting, and backend systems.</p>
 
 <h2>11. Children's Privacy</h2>
 <p>The App is not directed to children. We do not knowingly collect personal information from children. Feedback should not include personal information from children.</p>
@@ -109,7 +109,7 @@ th { background: #f5f5f5; }
 <p>We may update this Privacy Policy from time to time. The "Last Updated" date will be revised when material changes are made.</p>
 
 <h2>13. Contact</h2>
-<p>If you have questions about this Privacy Policy, please contact us through the CrossTranslate Support page: <a href="https://luka-king.github.io/crosslingo/support/">https://luka-king.github.io/crosslingo/support/</a>, through in-app Feedback, or by email at <a href="mailto:Crosslingo2026@outlook.com">Crosslingo2026@outlook.com</a>.</p>
+<p>If you have questions about this Privacy Policy, please contact us through the CrossTranslate Support page: <a href="https://luka-king.github.io/crosslingo/support/">https://luka-king.github.io/crosslingo/support/</a>, through in-app Feedback, or by email at <a href="mailto:aitranslator@yeah.net">aitranslator@yeah.net</a>.</p>
 
 </body>
 </html>
