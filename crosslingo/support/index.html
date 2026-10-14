@@ -17,15 +17,19 @@ li { margin: 6px 0; }
 <body>
 
 <h1>CrossTranslate Support</h1>
-<p class="meta">Last Updated: October 13, 2026 &middot; Version 1.8</p>
+<p class="meta">Last Updated: October 14, 2026 &middot; Version 1.8</p>
 
 <p>CrossTranslate is a translation app for text, voice, camera, and image translation on iPhone. This page provides support information for CrossTranslate Plus, the in-app Contact us support flow, and the multilingual interface in Version 1.8.</p>
+
+<h2>Automatic Input-Language Detection</h2>
+<p>In versions with automatic detection, you can type, speak, or photograph text in a supported language even when the input selector shows a different language. The input selection is a hint; the target selector determines the output language. For example, Chinese input can be translated into Spanish while the input selector shows English.</p>
+<p>Changing the target language retranslates the current input. Photo translation reuses the recognized text when only the target changes. If the input is already in the target language, the original text is kept. For short or unclear input, use a longer phrase, a clearer image, or a quieter recording. Recognition and translation may still make mistakes.</p>
 
 <h2>Interface Language</h2>
 <p>Version 1.8 supports 17 interface languages: English, Spanish, Turkish, Portuguese (Portugal), French, Hindi, German, Italian, Ukrainian, Russian, Filipino, Vietnamese, Korean, Japanese, Portuguese (Brazil), Traditional Chinese (Hong Kong), and Arabic.</p>
 <ul>
 <li><strong>Choose the interface language:</strong> CrossTranslate follows the first supported language in your iOS language preferences. To change your device preferences, open Settings &gt; General &gt; Language &amp; Region. If iOS offers a Language option under Settings &gt; Apps &gt; CrossTranslate, you can choose a language for this App there. CrossTranslate has no separate in-app interface-language switch.</li>
-<li><strong>Translation languages:</strong> The source and target language selectors inside CrossTranslate control translation, not the interface. Available translation pairs and speech recognition languages may differ from the 17 interface languages and depend on Apple system support and downloaded language resources.</li>
+<li><strong>Translation languages:</strong> The source and target language selectors inside CrossTranslate control translation, not the interface. Available translation pairs and speech recognition languages may differ from the 17 interface languages and depend on the recognition engine, Apple translation support, and downloaded language resources.</li>
 <li><strong>Language did not change:</strong> Check the App language preference and your preferred language order, then reopen CrossTranslate. If none of your preferred languages is supported, the interface falls back to English.</li>
 <li><strong>Some content remains in another language:</strong> Onboarding animations and sample conversations may contain fixed text. This support page and the linked legal pages are currently provided in English. Text you enter and translation results are not changed by switching the interface language.</li>
 <li><strong>Prices and dates:</strong> Formatting follows the interface language and device region. Changing the interface language does not itself change the subscription price or convert its currency. Check Apple's purchase confirmation sheet before confirming.</li>
@@ -33,7 +37,7 @@ li { margin: 6px 0; }
 
 <h2>Common Help Topics</h2>
 <ul>
-<li><strong>Voice translation:</strong> Make sure Microphone and Speech Recognition permissions are enabled for CrossTranslate in the iOS Settings app.</li>
+<li><strong>Voice translation:</strong> Enable Microphone access in iOS Settings. Versions using Apple speech recognition also need Speech Recognition permission. Automatic voice detection uses a downloaded on-device model; the first setup needs internet and storage space. Wait for setup to finish, or reconnect and retry if setup fails. Your microphone audio is not uploaded to the model download provider.</li>
 <li><strong>Siri and Dictation message:</strong> If iOS reports that Siri and Dictation are disabled, enable Dictation and Siri in system settings and check Screen Time restrictions.</li>
 <li><strong>Translation availability:</strong> Some language pairs may require Apple translation support or language downloads on the device. Try another language pair or follow the in-app download prompt.</li>
 <li><strong>Camera translation:</strong> Make sure Camera access is enabled. Photo Library access is only needed when you choose an image from the system photo picker.</li>
