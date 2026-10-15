@@ -18,12 +18,12 @@ th { background: #f5f5f5; }
 <body>
 
 <h1>CrossTranslate Privacy Policy</h1>
-<p class="meta">Last Updated: October 14, 2026 &middot; Version 1.8</p>
+<p class="meta">Last Updated: October 15, 2026 &middot; Version 1.8</p>
 
 <p>CrossTranslate ("the App", "we", "us", or "our") is a translation app for iPhone. This Privacy Policy explains how the App handles information when you use text, voice, camera, image translation, feedback, attribution, analytics, and CrossTranslate Plus subscription features.</p>
 
 <h2>1. Summary</h2>
-<p>CrossTranslate does not require you to create an account. The App uses Apple system frameworks for translation, camera capture, photo selection, and text recognition. Depending on the app version and feature, speech recognition uses Apple services or downloaded models that run on your device. We do not operate a server that receives your typed text, microphone audio, speech transcripts, translations, photos, or conversation history for translation processing.</p>
+<p>CrossTranslate does not require you to create an account. The App uses Apple system frameworks for translation, camera capture, photo selection, and text recognition. Depending on the app version and feature, speech recognition uses Apple services or models included with the App that run on your device. We do not operate a server that receives your typed text, microphone audio, speech transcripts, translations, photos, or conversation history for translation processing.</p>
 <p>CrossTranslate Plus subscriptions are provided through Apple's In-App Purchase system. Our servers are used to load subscription catalog information, create purchase orders, verify Apple purchase results, confirm membership status, restore purchases, and diagnose purchase issues.</p>
 <p>The App includes an optional feedback and support feature. The current in-app Feedback flow lets you choose a support category, write a message, and send an email to our support address through Apple's Mail composer. If the legacy in-app feedback backend is enabled in a later version, it may also collect feedback text, optional contact information, and optional images that you choose to attach.</p>
 <p>The App uses AppsFlyer, Meta/Facebook SDK, Firebase Analytics, Firebase Crashlytics, and our own market reporting endpoint for install attribution, marketing measurement, app analytics, crash diagnostics, and subscription funnel diagnostics. These services must not receive your translation content.</p>
@@ -61,8 +61,8 @@ th { background: #f5f5f5; }
 <p>Please do not include sensitive personal information, private conversations, payment card details, passwords, or confidential content in feedback text, email, or images.</p>
 
 <h2>5. Recognition Models and Apple System Services</h2>
-<p>Versions with automatic voice-language detection use WhisperKit and downloaded multilingual speech models to recognize microphone audio on your device. Audio is held temporarily in memory for recognition and is not sent to the model download provider. Model files remain in the App container for reuse and are excluded from device backups.</p>
-<p>The first model setup requires an internet connection and storage space. Model and tokenizer files are downloaded from Hugging Face and its delivery infrastructure. Those providers receive technical information needed to serve downloads, such as your IP address and HTTP request information; the download requests do not contain microphone audio, transcripts, photos, or translation text. See <a href="https://huggingface.co/privacy">Hugging Face’s Privacy Policy</a>. Existing features that use Apple speech services remain subject to the Apple-service explanation below.</p>
+<p>The current version with automatic voice-language detection includes WhisperKit multilingual speech models and tokenizer files in the App installation. Microphone audio is held temporarily in memory and recognized on your device; it is not sent to the speech model provider. The model files are read directly from the installed App resources.</p>
+<p>No separate speech model download is required when you first use this feature, and it does not send model download requests to Hugging Face. Apple translation language packs may still need a separate download. Existing features that use Apple speech services remain subject to the Apple-service explanation below.</p>
 <p>The App uses Apple-provided frameworks to perform its core functions. Depending on your device, iOS version, language, and system settings, Apple speech recognition and translation services may process requests on device or through Apple-operated services. We do not receive or store the content processed by Apple frameworks.</p>
 <table>
 <tr><th>Feature</th><th>Apple Framework or Service</th><th>Purpose</th></tr>
